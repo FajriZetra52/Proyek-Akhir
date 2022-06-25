@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Perkiraan Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+            body {
+                background-image: url(sky.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h1 style="color: white;">Cek Perkiraan Cuaca</h1>
+            </div>
+        </div> 
+
+        <div class="row mt-2">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input-keyword" placeholder="Masukan Nama Kota atau Negara" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-info" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="result box" style="background: rgba(255, 255, 255, 0.5);">
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>Perkiraan Cuaca oleh Muhammad Fajri Zetra</h4>
+        <h6>Powered by openweathermap.org API</h6>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
